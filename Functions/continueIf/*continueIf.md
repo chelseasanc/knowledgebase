@@ -1,5 +1,5 @@
 ###How do I use the Continue If Function?
-The Continue If Function is probably the most useful function Azuqua offers. It lets you only continue a process if certain conditions are met, letting you control how your Flõs move forward. It takes in four pieces of data: variable A, variable B, and two optional fields that will return an error code and a message if your Flõ is stopped. Here's how to use it in a Flo:
+The Continue If Function will only continue a Flõ if certain conditions are met, letting you control how your Flõs move forward. It takes in four pieces of data: variable A, variable B, and two optional fields that will return an error code and a message if your Flõ is stopped. Here's how to use it in a Flõ:
 
 1. From the menu in the right-hand side of the designer, select the Functions tab.
 2. Find the Continue If Function in the list and click it to add the card to the designer. 
