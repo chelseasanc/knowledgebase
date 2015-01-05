@@ -1,5 +1,7 @@
-###How do I use the XX Function?
-The XX Function takes in  and returns . For example, Here's how to use it in a Flo:
+###How do I use the Search Function?
+<!---Search function has changed since I saw it last, what does it do now?--->
+
+The Search Function takes in  and returns . For example, Here's how to use it in a Flo:
 
 1. From the menu in the right-hand side of the designer, select the Functions tab.
 2. Find the XX Function in the list and click it to add the card to the designer. 
