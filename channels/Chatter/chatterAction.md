@@ -6,7 +6,7 @@ Actions are the automatic steps you can take with an app. Creating or modifying 
 2. Find Chatter in the Channels menu on the right-hand side of the designer and click it to display the list of Actions.
 3. Click on the Action you want to use to add the card to the designer. 
 4. Configure the card. You can choose an existing configuration from the drop-down menu or [create a new configuration](). Once this is done the card will flip over automatically. 
-5. Now, you can drag data into the input fields and drag the results to empty fields on other cards. Read more about how each action works below.
+5. Now, you can drag data or type into the input fields and drag the results to empty fields on other cards. Read more about how each action works below.
 
 **Comment on Feed** 
 
