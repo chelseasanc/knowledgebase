@@ -1,5 +1,3 @@
-####What kind of Actions can I take with Bing?
-
 Actions are the automatic steps you can take with an app. Creating or modifying a record, posting to social media, running analytics: if your app can do it, Azuqua can do it. 
 
 Actions will only work after you've set up a starting Event for your Flõ. <a href="">Here's how you can start a Flõ with Bing</a>. Once you've done that, find Bing in the Channels menu on the right-hand side of the designer and click on it to display the list of Actions. 
