@@ -50,7 +50,7 @@
 
 *Schedule Marketing Email:*
 
-* There are no input fields to determine when the email should be sent
+* There are no input fields to determine which list you should send the email to
 
 **Smartsheet**
 
@@ -61,3 +61,10 @@
 *New Column:*
 
 * What kind of input does this take? In the Smartsheet docs, it says the input should be all-caps with underscores instead of spaces, should users put anwers in this way?
+
+**Stripe**
+
+*Capture charge:*
+
+* what is the `isCaptured` input field supposed to take? Can't find anything in the Stripe docs
+
