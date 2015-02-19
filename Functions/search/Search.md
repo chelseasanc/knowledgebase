@@ -10,3 +10,12 @@ The Search Function takes in  and returns . For example, Here's how to use it in
 5. Drag the Result to the field where you want it to go. 
 
 Keep in mind the kind of data that each field accepts (putting a number into the Tweet Parser Function won't help you too much). Usually, there will be labels to help you understand the sort of data you can drop into a card. 
+
+<div>
+    <div style="width: 60%; float: left; margin-right: 10px">
+    </div>
+    <div style="width: 30%, float: left">
+    	 <img src="
+https://s3.amazonaws.com/azuqua_static/help-center/Channels/"></img>
+    </div>
+</div>

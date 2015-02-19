@@ -1,0 +1,61 @@
+<p>Actions are the automatic steps you can take with an app. Creating or modifying a record, posting to social media, running analytics: if your app can do it, Azuqua can do it. </p>
+
+<ol>
+<li>Set up your Fl&otilde;. Actions only work after you&#39;ve set up a starting Event, so make sure you&#39;ve done that first. <a href="">Here&#39;s how you can start a Fl&otilde; with MailChimp</a>.</li>
+<li>Find MailChimp in the Channels menu on the right-hand side of the designer and click it to display the list of Actions.</li>
+<li>Click on the Action you want to use to add the card to the designer. </li>
+<li>Configure the card. You can choose an existing configuration from the drop-down menu or <a href="">create a new configuration</a>. </li>
+<li>Once you&#39;ve chosen your configuration, Azuqua will automatically pull data from your MailChimp account. Read more about using each action below.</li>
+</ol>
+
+<div>
+    <div style="width: 60%; float: left; margin-right: 10px">
+        <h4>Add User to a Group</h4>
+        Use this action to add an existing user to a group in MailChimp. This action requires a few extra steps to configure. After you&#39;ve set up the account configuration, use the drop-down menus to choose the list, group, and subgroup you want to add the user to before clicking the gear in the top right-hand corner of the card to flip it over. Then, drag or type data into the Input fields, and drag the output data to other cards to continue your Fl&otilde;. </p>
+
+        <p><em>Input fields:</em></p>
+
+        <ul>
+        <li><code>Email</code>, the email address of the existing user that you want to add to the group</li>
+        </ul>
+
+        <p><em>Output data:</em></p>
+
+        <ul>
+        <li><code>User ID</code>, the ID of the user you&#39;ve just added</li>
+        </ul>
+    </div>
+    <div style="width: 30%; dsiplay: block; float: left">
+            <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/mailchimp/mailchimp-action-1-1.png"></img>
+            <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/mailchimp/mailchimp-action-1-2.png"></img>
+    </div>
+</div>
+
+<div style ="clear:both">
+    <div style="width: 60%; float: left; margin-right: 10px">
+        <h4>Subscribe New User</h4>
+
+        <p>Use this action to create a new user (or update an old user with new information) subscribe them to a list. After you&#39;ve set up the account configuration, use the drop-down menu to choose the list you want to subscribe the user to before clicking the gear in the top right-hand corner of the card to flip it over. Then, drag or type data into the Input fields, and drag the output data to other cards to continue your Fl&otilde;.</p>
+
+        <p><em>Input fields:</em> </p>
+
+        <ul>
+        <li><code>Email</code>, the email of the new subsciber that you want to add</li>
+        <li><code>double_optin</code>, a boolean (true/false) that determines if the new/changed user will be sent an email to confirm their subscription to the list. Defaults to &quot;true.&quot;</li>
+        <li><code>update_existing</code>, a boolean (true/false) that determines if this email is being assigned to a new user or an old one. Defaults to &quot;false.&quot;</li>
+        <li><code>replace_interests</code>, a boolean (true/false) that replaces the interest groups of the user with the interest groups associated with this list. Defaults to &quot;true,&quot; but if you are updating an existing user type in &quot;false&quot; to add the new interest groups to the user&#39;s record instead of replacing their old interest groups. </li>
+        <li><code>send_welcome</code>, an optional field that will send a welcome email to new subscribers to a list. <code>send_welcome</code> defaults to &quot;false,&quot; but if you want to send a welcome email, type in &quot;true.&quot; MailChimp will <em>not</em> send a welcome email if <code>double_optin</code> or <code>update_existing</code> are set to &quot;true.&quot;</li>
+        <li><code>Attributes</code>, the attributes of the new user. These are generated based on your MailChimp settings, so the fields that appear under the Attributes heading will change based the list you are working with. Common attribute fields include <code>FNAME</code> (first name) and <code>LNAME</code> (last name). </li>
+        </ul>
+
+        <p><em>Output data:</em></p>
+
+        <ul>
+        <li><code>User ID</code>, the unique numeric ID of your new/updated user in MailChimp</li>
+        </ul>
+    </div>
+    <div style="width: 30%, float: left">
+        <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/mailchimp/mailchimp-action-2.png"></img>
+    </div>
+</div>
+

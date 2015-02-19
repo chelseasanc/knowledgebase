@@ -1,0 +1,96 @@
+<p>Actions are the automatic steps you can take with an app. Creating or modifying a record, posting to social media, running analytics: if your app can do it, Azuqua can do it. </p>
+
+<ol>
+<li>Set up your Fl&otilde;. Actions only work after you&#39;ve set up a starting Event, so make sure you&#39;ve done that first. <a href="">Here&#39;s how you can start a Fl&otilde; with Marketo</a>.</li>
+<li>Find Marketo in the Channels menu on the right-hand side of the designer and click it to display the list of Actions.</li>
+<li>Click on the Action you want to use to add the card to the designer. </li>
+<li>Configure the card. You can choose an existing configuration from the drop-down menu or <a href="">create a new configuration</a>. Once this is done the card will flip over automatically. </li>
+<li>Now, you can drag or type data into the input fields and drag the results to empty fields on other cards. Read more about how each action works below. </li>
+</ol>
+
+<div>
+    <div style="width: 60%; float: left; margin-right: 10px">
+        <h4>Add Lead to List</h4>
+
+        <p>Use this action to add an existing lead to a list in Marketo. After you&#39;ve cconfigured Marketo, you will be able to choose the list you would like to work with from a drop-down menu. </p>
+
+        <p><em>Input fields:</em></p>
+
+        <ul>
+        <li><code>leadID</code>, the unique numeric ID of the lead you want to add to the list</li>
+        </ul>
+    </div>
+    <div style="width: 30%, float: left">
+        <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/marketo/marketo-action-1.png"></img>
+    </div>
+</div>
+
+<div>
+    <div style="width: 60%; float: left; margin-right: 10px">
+        <h4>Create/Update Lead</h4>
+
+        <p>Use this action to add a new lead to Marketo, or to update an existing lead with new information.</p>
+
+        <p><em>Input fields:</em></p>
+
+        <ul>
+        <li><code>email</code>, the email of the lead you would like to add or update</li>
+        <li><code>firstName</code>, the first name of the lead you would like to add or update</li>
+        <li><code>lastName</code>, the last name of the lead you would like to add or update</li>
+        <li><code>middleName</code>, the middle name of the lead you would like to add or update</li>
+        <li><code>city</code>, the city of the lead you would like to add or update</li>
+        <li><code>state</code>, the state of the lead you would like to add or update</li>
+        <li><code>postalCode</code>, the postal code of the lead you would like to add or update</li>
+        <li><code>phone</code>, the phone number of thelead you would like to add or update</li>
+        </ul>
+
+        <p><em>Output data:</em></p>
+
+        <ul>
+        <li><code>id</code>, the unique numeric ID of the lead you have just created or updated within Marketo</li>
+        </ul>
+    </div>
+    <div style="width: 30%, float: left">
+        <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/marketo/marketo-action-2.png"></img>
+    </div>
+</div>
+
+<div>
+    <div style="width: 60%; float: left; margin-right: 10px">
+        <h4>Remove Lead from List</h4>
+
+        <p>Use this action to remove an existing lead grom a list in Marketo. After you&#39;ve cconfigured Marketo, you will be able to choose the list you would like to work with from a drop-down menu. </p>
+
+        <p><em>Input fields:</em></p>
+
+        <ul>
+        <li><code>leadID</code>, the unique numeric ID of the lead you want to remove from the list</li>
+        </ul>
+    </div>
+    <div style="width: 30%, float: left">
+        <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/marketo/marketo-action-3.png"></img>
+    </div>
+</div>
+
+<div>
+    <div style="width: 60%; float: left; margin-right: 10px">
+        <h4>Search Leads</h4>
+
+        <p>Use this action to search for existing leads in Marketo using their ID from another service.</p>
+
+        <p><em>Input fields:</em></p>
+
+        <ul>
+        <li><code>value</code>, the ID from of the lead in another service</li>
+        </ul>
+
+        <p><em>Output data:</em></p>
+
+        <ul>
+        <li><code>id</code>, the ID of the lead in Marketo</li>
+        </ul>
+    </div>
+    <div style="width: 30%, float: left">
+        <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/marketo/marketo-action-4.png"></img>
+    </div>
+</div>
