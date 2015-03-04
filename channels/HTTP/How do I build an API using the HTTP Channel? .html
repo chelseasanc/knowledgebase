@@ -1,0 +1,63 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>How do I build an API using the HTTP Channel? </title>
+
+</head>
+<body>
+<p>Using the HTTP Channel, you can expose Flõs as RESTful endpoints and build a flexible API in minutes. Not only can you connect your service to any other channel that we support, you can transform your data with our library of logic, math, and business functions. </p>
+
+<p>For this example we will create a Flõ that will add two numbers together and return the sum back to us. We will subsequently call this Flõ from our server and explore how we can invoke it from another service as well.</p>
+
+<h4 id="toc_0">Configure the HTTP Card</h4>
+
+<ol>
+<li>Find HTTP in the Channels menu on the right-hand side of the designer and click it to display the list of Events. </li>
+<li>Choose the “Post” event to add the card to the designer. </li>
+<li>Click on the blue arrow to add parameters to the card, then name them and press enter. Here we are entering the attributes that we expect as input for this Flõ. When we invoke this Flõ we will be sending these attributes to this Flõ. After you’ve entered parameter names, the fields will change into draggable data. </li>
+</ol>
+
+<p><img src = "https://s3.amazonaws.com/azuqua_static/help-center/Channels/http/http-api-1.png"></p>
+
+<p><img src = "https://s3.amazonaws.com/azuqua_static/help-center/Channels/http/http-api-2.png"></p>
+
+<h4 id="toc_1">Build Your On-Demand Process</h4>
+
+<ol>
+<li> Set up the process you want to activate with this API call. In this tutorial, we’re going to use a simple add function as an example. Read more about the <a href="http://help.azuqua.com/help/article/link/channels">Channels</a> and <a href="http://help.azuqua.com/help/article/link/functions">Functions</a> you can add to your Fl&otilde;. 
+<p><img src = "https://s3.amazonaws.com/azuqua_static/help-center/Channels/http/http-api-3.png"></p></li>
+<li>Drag your data from the Post card to an empty field on another card.
+<p><img src = "https://s3.amazonaws.com/azuqua_static/help-center/Channels/http/http-api-4.png"></p></li>
+</ol>
+
+<h4 id="toc_2">Return Data from the Fl&otilde;</h4>
+
+<ol>
+<li>To return data from the Flõ, find the HTTP channel again and add the “Return” card to the Flõ. Click the blue arrow to add and name data     fields.<br>
+<p><img src = "https://s3.amazonaws.com/azuqua_static/help-center/Channels/http/http-api-5.png"></p></li>
+<li>Drag the result from the Add card the the Return card. 
+<p><img src = "https://s3.amazonaws.com/azuqua_static/help-center/Channels/http/http-api-6.png"></p></li>
+<li>Click “Save Flõ” to save your changes, then click “Click to Run Flõ” to activate it. </li>
+</ol>
+
+<h4 id="toc_3">Turn the Fl&otilde; into a RESTful Endpoint</h4>
+
+<ol>
+<li>To turn this Flõ into a RESTful API endpoint, go to “My Flõs.” Find the Flõ you’ve just saved, then click the “...” button to reveal more options. Click on “API Access.”
+<p><img src = "https://s3.amazonaws.com/azuqua_static/help-center/Channels/http/http-api-7.png" style="width: 100%"></p></li>
+<li>Choose the level of security you would like for this endpoint. Azuqua supports three levels of security; by default your Flõ is set to the most secure level. </li>
+<li>If you would like to access this Flõ from anywhere or let other people use it, you may select &quot;From anywhere.&quot; This Flõ will then be open and anyone can invoke it using the URL provided.
+<p><img src = "https://s3.amazonaws.com/azuqua_static/help-center/Channels/http/http-api-8.png" style="width: 100%"></p></li>
+<li>In order to invoke this Flõ from an external trusted service where you want to setup a webhook and run the Flõ when something happens in that system, you may choose “From a trusted server.” Azuqua will generate a unique URL and client token, and you can then use that entire URL with client token to invoke this Flõ.
+<p><img src = "https://s3.amazonaws.com/azuqua_static/help-center/Channels/http/http-api-9.png" style="width: 100%"></p></li>
+<li>For most secure scenarios or when you are invoking this Flõ from your servers, choose “From my server”, where an access-key and access-secret are used for data exchange and invocation.<br>
+<p><img src = "https://s3.amazonaws.com/azuqua_static/help-center/Channels/http/http-api-10.png" style="width: 100%"></p></li>
+</ol>
+
+<p>Azuqua has created helper libraries in various languages (including C#, node.js, Ruby, Python, or Java) to make it easy to access Flõs from your own code. These libraries can be found at https://github.com/azuqua.</p>
+
+
+</body>
+
+</html>

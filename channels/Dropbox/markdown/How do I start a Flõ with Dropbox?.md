@@ -7,21 +7,24 @@ Events are the triggers that start your Fl&otilde;. Whenever your starting Event
 5. Drag data from the Event card to empty fields on other cards and continue building your Fl&otilde;. Read more about each Event:
 
 ####Monitor Folder
-Use this Event to start a Fl&otilde; whenever a folder is updated. To configure this card, fill in the name of the folder you want to monitor, then click the gear in the corner of the card to flip it over.
+Use this Event to start a Fl&otilde; whenever a folder is updated (if you only want to start a Fl&otilde; when there is a new item, use the "New Item" event). To configure this card, fill in the name of the folder you want to monitor, then click the gear in the corner of the card to flip it over.
 
 *Output data:*
 
 * `path`, the path to the new or updated item in the folder
-* `size`, the size of the new or updated item in the folder
-* `root`
-* `revision`
-* `is deleted`
+* `size`, the size of the new or updated item in the folder in KB
+* `root`, the top-level folder where the new or updated item is located (`path` will be relative to this folder)
+* `revision`, the unique identifier for the current revision of a file
+* `is deleted`, a boolean field that will return `true` if the Fl&otilde; was triggered because an item was deleted
 
 <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/dropbox/dropbox-event-1-1.png"></img>
 
 <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/dropbox/dropbox-event-1-2.png"></img>
 
 ####New Item
+Use this event to start a Fl&otilde; only when a new item is added to Dropbox. To 
+
+
 <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/dropbox/dropbox-event-2-1.png"></img>
 
 <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/dropbox/dropbox-event-2-2.png"></img>
