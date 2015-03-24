@@ -1,0 +1,110 @@
+<p>Actions are the automatic steps you can take in an app using Azuqua. Creating or modifying a record, posting to social media, running analytics: if your app can do it, Azuqua can do it. </p>
+
+<p>{{snippet.Toc}}</p>
+
+<ol>
+<li>Actions only work after you&#39;ve set up a starting Event to trigger your Fl&otilde;, so make sure you&#39;ve done that first. <a href="http://help.azuqua.com/help/article/link/acumatica-events">Here&#39;s how you can start a Fl&otilde; with Acumatica</a>.</li>
+<li>Find Acumatica in the Channels menu on the right-hand side of the designer and click it to display the list of Actions.</li>
+<li>Click on the Action you want to use to add the card to the designer. </li>
+<li>Configure the card. You can choose an existing configuration from the drop-down list or <a href="http://help.azuqua.com/help/article/link/acumatica-config">create a new configuration</a>.</li>
+<li>Follow any additional configuration steps specific to this Action (read more below). The card will flip over automatically. </li>
+<li>Now, you can drag or type data into the input fields and drag the results to empty fields on other cards.  Read more about how each Action works:</li>
+</ol>
+
+<div>
+    <div style="width: 65%; float: left; margin-right: 10px">
+        <a name="attributes"><h4 id="toc_0">Attributes</h4></a>
+        <p>Use this Action to add attributes to a new or updated record in Acumatica. In the example on the right, we&#39;ve chosen to create or update the attributes associated with a Lead record. </p>
+        <ol>
+        <li>To configure this card, choose the type of Acumatica Entity you want to work with from the drop-down list. </li>
+        <li>Choose the Entity Class you would like to work with from the drop-down list. </li>
+        <li>The card should flip over automatically. If it doesn&#39;t, click the gear in the corner to flip it over. </li>
+        <li>Type values into the input fields, or drag data from another card and drop it in. The input fields are dynamically generated based on the attributes associated with this entity class in your Acumatica account. <strong>You need to know which fields are required, and fill in a value for those fields.</strong> You may leave non-required fields empty.</li>
+        <li>Drag the output data to any empty field labeled &quot;Attributes&quot; on another Acumatica card. </li>
+        </ol>
+    </div>
+    <div style="float: left; display: block">
+        <p><img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/acumatica/acumatica-action-attributes-1.png"></p>
+        <p><img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/acumatica/acumatica-action-attributes-2.png"></p>
+    </div>
+</div>
+
+<div style="clear: both">
+    <div style="width: 65%; float: left; margin-right: 10px">
+        <h4 id="toc_1">Create</h4>
+        <p>Use this Action to create a new record in Acumatica. In the example on the right, we&#39;ve chosen to create a new Lead record.</p>
+        <ol>
+        <li>To configure this card, choose the type of Acumatica Entity you want to work with from the drop-down list.<br></li>
+        <li>The card should flip over automatically. If it doesn&#39;t, click the gear in the corner to flip it over. </li>
+        <li>Type values into the input fields, or drag data from another card and drop it in. The input fields are dynamically generated based on the attributes associated with this Entity Class in your Acumatica account. Make sure that you&#39;ve entered a value for any required fields.</li>
+        <li><strong>If this record has attributes associated with it, you need to add the Acumatica <a href="#attributes">Attributes Action</a> to your Fl&otilde;.</strong> 
+              <ol type="a">
+                  <li>Add the Attributes card to your Fl&otilde; then drag 
+                  <li>Drag the Attributes card to before the Create card in the Flp&otilde;, then confgiure the Attributes card for the same record type and fill in the required attributes. Then, drag the resulting piece of data to the &quot;Attributes&quot; field on the Create card.</li>
+        </ol>
+    </div>
+    <div style="float: left; display: block">
+        <p><img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/acumatica/acumatica-action-create-1.png"></p>
+        <p><img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/acumatica/acumatica-action-create-2.png"></p>
+    </div>
+</div>
+
+<div>
+    <div style="width: 65%; float: left; margin-right: 10px">
+        <h4 id="toc_2">Update</h4>
+        <p>Use this Action to update an existing record in Acumatica using the record ID. In the example on the right, we&#39;ve chosen to update a Lead record. </p>
+        <ol>
+        <li>To configure this card, choose the Acumatica Entity you want to work with from the drop-down list.<br></li>
+        <li>The card should flip over automatically. If it doesn&#39;t, click the gear in the corner to flip it over. </li>
+        <li>Type values into the record ID field (under the Keys header), or drag data from another card and drop it in.</li>
+        <li><strong>To search for the Entity ID as part of the Fl&otilde;, add the Acumatica <a href="#search">Search Action</a> to your Fl&otilde;.</strong> Configure the card to look for the same Entity type, choose the page group where the ID is located, then choose to retrieve the ID attribute. Drag and drop data into the fields on the Search card, or type values into the fields to search for the record you want to retrieve data from, then drag the ID into the input field on the Update card. </li>
+        <li>Type values into any field, or drag and drop data to update that part of the record. </li>
+        <li>If you would like to update the Attributes of a record, use the Acumatica <a href="#attributes">Attributes Action</a> to create an Attributes record with your new data, then drag it to the &quot;Attributes&quot; field. </li>
+        </ol>
+    </div>
+    <div style="float: left; display: block">
+        <p><img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/acumatica/acumatica-action-update.png"></p>
+    </div>
+</div>
+
+<div>
+    <div style="width: 60%; float: left; margin-right: 10px">
+        <h4 id="toc_3">Read</h4>
+        <p>Use this Action to read a record in Acumatica using the record ID and return data from that record. In the example on the right, we&#39;ve chosen to read details from a Lead record. </p>
+        <ol>
+        <li>To configure this card, choose the Acumatica Entity you want to work with from the drop-down list.<br></li>
+        <li>The card should flip over automatically. If it doesn&#39;t, click the gear in the corner to flip it over. </li>
+        <li>Type values into the Entity ID field, or drag data from another card and drop it in.</li>
+        <li><strong>To search for the Entity ID as part of the Fl&otilde;, add the Acumatica <a href="#search">Search Action</a> to your Fl&otilde;.</strong> Configure the card to look for the same Entity type, choose the page group where the ID is located, then choose to retrieve the ID attribute. Drag and drop data into the fields on the Search card, or type values into the fields to search for the record you want to retrieve data from, then drag the ID into the input field on the Read card. </li>
+        <li>The output data is dynamically generated based on the entity. Drag the data you want to use from the Read card to an empty field on another card. </li>
+        </ol>
+    </div>
+    <div style="width: 30%, float: left">
+        <p><img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/acumatica/acumatica-action-read.png"></p>
+    </div>
+</div>
+
+<div>
+    <div style="width: 60%; float: left; margin-right: 10px">
+<a name="search"><h4 id="toc_4">Search</h4></a>
+
+<p>Use the Search action to find a record in Acumatica and return an attribute of that record. In the example on the right, we&#39;re searching for the record ID of a certain Lead. </p>
+
+<ol>
+<li>To configure this card, choose the Acumatica Entity you want to search for from the drop-down list. </li>
+<li>Choose the Page Group from the drop-down list to narrow down which attributes you would like to return from this record. </li>
+<li>Choose the attribute you would like to retrieve from the record from the drop-down list. </li>
+<li>The card should flip over automatically. If it doesn&#39;t, click the gear in the corner to flip it over. Azuqua will dynamically generate search fields specific to this record type based on your account data. </li>
+<li>Type values into the search fields or drag data from another card and drop it in. <strong>Use specific values, such as a phone number or an email to search for records.</strong> If you are not specific enough and the search values you enter match multiple records, Acumatica will return the attribute associated with the first in that list and your data may not end up in the right place. </li>
+<li>Add more cards to your Fl&otilde;: more Actions, other Channels, or Functions.</li>
+<li>Scroll down to the bottom of the Search card, then drag the return data to an empty field on another card to use it. </li>
+</ol>
+    </div>
+    <div style="width: 30%, float: left">
+        <p><img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/acumatica/acumatica-action-search-1.png"></p>
+
+        <p><img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/acumatica/acumatica-action-search-2.png"></p>
+
+        <p><img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/acumatica/acumatica-action-search-3.png"></p>
+    </div>
+</div>

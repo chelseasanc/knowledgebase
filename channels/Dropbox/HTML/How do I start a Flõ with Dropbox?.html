@@ -1,0 +1,60 @@
+<p>Events are the triggers that start your Fl&otilde;. Whenever your starting Event happens, the process you&#39;ve set up will get to work.  </p>
+
+<ol>
+<li>Find Dropbox in the Channels menu on the right-hand side of the designer and click it to display the list of Events.</li>
+<li>Click on the Event you want to use to add the card to the designer. </li>
+<li>Configure the card. You can choose an existing configuration from the drop-down list or <a href="">create a new configuration</a>. Follow the configuration steps specific to that Event (see below).</li>
+<li>Now, add other cards to your Fl&otilde;. Actions on other channels, functions, whatever you want to happen next. </li>
+<li>Drag data from the Event card to empty fields on other cards and continue building your Fl&otilde;. Read more about each Event:</li>
+</ol>
+
+<div class="wrapper">
+    <div class="leftcol">
+        <h4>Monitor Folder</h4>
+
+        <p>Use this Event to start a Fl&otilde; whenever a folder is updated (if you only want to start a Fl&otilde; when there is a new item, use the &quot;New Item&quot; event). To configure this card, fill in the name of the folder you want to monitor, then click the gear in the corner of the card to flip it over.</p>
+
+        <p><em>Output data:</em></p>
+
+        <ul>
+        <li><code>path</code>, the path to the new or updated item in the folder</li>
+        <li><code>size</code>, the size of the new or updated item in the folder in KB</li>
+        <li><code>root</code>, the top-level folder where the new or updated item is located (<code>path</code> will be relative to this folder)</li>
+        <li><code>revision</code>, the unique identifier for the current revision of a file</li>
+        <li><code>is deleted</code>, a boolean field that will return <code>true</code> if the Fl&otilde; was triggered because an item was deleted</li>
+        </ul>
+    </div>
+    <div class="rightcol">
+        <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/dropbox/dropbox-event-1-1.png">
+        <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/dropbox/dropbox-event-1-2.png">
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="leftcol">
+        <h4 id="toc_1">New Item</h4>
+
+        <p>Use this event to start a Fl&otilde; only when a new item (either a folder or a file) is added to Dropbox. To </p>
+
+        <p><em>Output data:</em></p>
+
+        <ul>
+        <li><code>size</code>, the size of the file in KB or MB</li>
+        <li><code>rev</code>, the unique numeric ID associated with this revision of the file</li>
+        <li><code>thumb_exists</code>, a boolean (true/false) that returns true if the file is an image that can be converted to a thumbnail</li>
+        <li><code>bytes</code>, the file size in bytes</li>
+        <li><code>modified</code>, the time and date that the file was added Dropbox, in standard format (e.g. &quot;Fri, 13 Mar 2015 11:50:33 +0800)</li>
+        <li><code>client_mtime</code>, the time and date that the file was last modified by the desktop client in standard format.</li>
+        <li><code>path</code>, the path to the new item</li>
+        <li><code>is_dir</code>, a boolean (true/false) that returns true if the new item is a directory, or folder.</li>
+        <li><code>icon</code>, the icon type associated with this file in Dropbox</li>
+        <li><code>root</code>, the root folder where the new item is located</li>
+        <li><code>mime_type</code>, the general and specific type of this file (e.g. img/jpeg, application/pdf)</li>
+        <li><code>revision</code>, the revision number asosciated with the file. It is different from <code>rev</code>, because <code>revision</code> indicates how many versions of this file have been saved</li>
+        </ul>
+    </div>
+    <div class="rightcol">   
+        <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/dropbox/dropbox-event-2-1.png">
+        <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/dropbox/dropbox-event-2-2.png">
+    </div>
+</div>

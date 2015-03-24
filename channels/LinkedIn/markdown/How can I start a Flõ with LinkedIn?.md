@@ -88,7 +88,7 @@ Use this Event to start a Fl&otilde; whenever someone in your network updates th
 </div>
 
 ####Monitor Shares
-Use this Event to start a Fl&otilde; when someone in your network shares something.
+Use this Event to start a Fl&otilde; when someone in your network shares an update. 
 
 *Output data:*
 

@@ -22,9 +22,22 @@ Use this Event to start a Fl&otilde; whenever a folder is updated (if you only w
 <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/dropbox/dropbox-event-1-2.png"></img>
 
 ####New Item
-Use this event to start a Fl&otilde; only when a new item is added to Dropbox. To 
+Use this event to start a Fl&otilde; only when a new item (either a folder or a file) is added to Dropbox. To 
 
+*Output data:*
 
+* `size`, the size of the file in KB or MB
+* `rev`, the unique numeric ID associated with this revision of the file
+* `thumb_exists`, a boolean (true/false) that returns true if the file is an image that can be converted to a thumbnail
+* `bytes`, the file size in bytes
+* `modified`, the time and date that the file was added Dropbox, in standard format (e.g. "Fri, 13 Mar 2015 11:50:33 +0800)
+* `client_mtime`, the time and date that the file was last modified by the desktop client in standard format.
+* `path`, the path to the new item
+* `is_dir`, a boolean (true/false) that returns true if the new item is a directory, or folder.
+* `icon`, the icon type associated with this file in Dropbox
+* `root`, the root folder where the new item is located
+* `mime_type`, the general and specific type of this file (e.g. img/jpeg, application/pdf)
+* `revision`, the revision number asosciated with the file. It is different from `rev`, because `revision` indicates how many versions of this file have been saved
 <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/dropbox/dropbox-event-2-1.png"></img>
 
 <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/dropbox/dropbox-event-2-2.png"></img>

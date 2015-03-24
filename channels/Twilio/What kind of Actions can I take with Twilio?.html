@@ -1,0 +1,35 @@
+<p>Actions are the automatic steps you can take in an app using Azuqua. Creating or modifying a record, posting to social media, running analytics: if your app can do it, Azuqua can do it.</p>
+
+<ol>
+<li>Set up your Fl&otilde;. Actions only work after you&#39;ve set up a starting Event, so make sure you&#39;ve done that first. <a href="">Here&#39;s how you can start a Fl&otilde; with Twilio</a>.</li>
+<li>Find Twilio in the Channels menu on the right-hand side of the designer and click it to display the list of Actions.</li>
+<li>Click on the Action you want to use to add the card to the designer. </li>
+<li>Configure the card. You can choose an existing configuration from the drop-down list or <a href="">create a new configuration</a>. Once this is done the card will flip over automatically. </li>
+<li>Now, you can drag or type data into the input fields and drag the results to empty fields on other cards. Read more about how each action works below.</li>
+</ol>
+
+<div class="wrapper">
+    <div class="leftcol"> 
+        <h4 id="toc_0">Send an SMS</h4>
+
+        <p>Use this Action to send an SMS using your Twilio number. </p>
+
+        <p><em>Input fields:</em></p>
+
+        <ul>
+        <li><code>to</code>, the number where you want to send the message. The preffered format is with a &quot;+&quot; and the country code (e.g. +14258675309). Twilio will also handle locally formatted numbers (e.g. (425) 867-5309) if they are in the same country as the sending number </li>
+        <li><code>body</code>, the text of the message, maximum 1600 characters</li>
+        </ul>
+
+        <p><em>Output data:</em></p>
+
+        <ul>
+            <li><code>sid</code>, the unique ID for any messsage that is succesfully sent by Twilio</li>
+            <li><code>dateCreated</code>, the date the message was sent in GMT format (YYYY-MM-DD)</li>
+
+        </ul>
+    </div>
+    <div class="rightcol"> 
+        <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/twilio/twilio-action-1.png">
+    </div>
+</div>

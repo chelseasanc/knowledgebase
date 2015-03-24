@@ -8,28 +8,20 @@ Actions are the automatic steps you can take with an app. Creating or modifying 
 5. Now, you can drag or type data into the input fields and drag the results to empty fields on other cards. Read more about how each action works below.
 
 ####Add to Index
-Use this Action to add documents (entered as JSON objects) to a text index.
+Use this Action to add documents (entered as JSON objects) to an existing text index in HP IDOL.
 
 *Input fields:*
 
-* `reference`
-* `url` 
+* `reference`, the reference you would like to use to retrieve the document (such as a file path)
+* `url`, the url of the document you would like to add to the index (if you would like to use an external URL as the source)
 
-<!--Can we get either of these as an output from the create index action? Also, what are they exactly?-->
-
-<div>
-    <div style="width: 60%; float: left; margin-right: 10px">
-    </div>
-    <div style="width: 30%; float: left">
-    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-1-1.png"></img>
-    </div>
-</div>
+There are also optional JSON input fields, if you would like to add a JSON object to the text index instead of a URL. Press the blue arrow to add more fields, then type the parameter name (key) into the field and hit enter to save the key. Now, you can drag or type data into the JSON fields. 
 
 <div>
-    <div style="width: 60%; float: left; margin-right: 10px">
+    <div class="leftcol">
     </div>
-    <div style="width: 30%; float: left">
-    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-1-2.png"></img>
+    <div class="rightcol">
+    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-addtoindex-2.png">
     </div>
 </div>
 
@@ -43,82 +35,84 @@ Use this Action to read and extract data from a barcode image.
 * `URL`, the public HTTP URL where the image is stored
 
 <div>
-    <div style="width: 60%; float: left; margin-right: 10px">
+    <div class="leftcol">
     </div>
-    <div style="width: 30%; float: left">
-    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-2.png"></img>
+    <div class="rightcol">
+    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-barcodescanner.png">
     </div>
 </div>
 
 ####Create Index
-Use this action to create a new text index in HP Idol
+Use this Action to create a new text index in HP Idol
 
 *Input fields:*
 
-* `title`, 
-* `dependencies`
+* `title`, the title of the index you want to create
+* `dependencies`, the description of the index you want to create
 
 <div>
-    <div style="width: 60%; float: left; margin-right: 10px">
+    <div class="leftcol">
     </div>
-    <div style="width: 30%; float: left">
-    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-3.png"></img>
+    <div class="rightcol">
+    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-createindex.png">
     </div>
 </div>
 
-<div>
-    <div style="width: 60%; float: left; margin-right: 10px">
+####Entity Extraction
+Use this Action to extract entities from text 
+
+<div class="wrapper">
+    <div class="leftcol">
     </div>
-    <div style="width: 30%; float: left">
-    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-4.png"></img>
+    <div class="rightcol">
+    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-entityextraction-1.png">
+    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-entityextraction-2.png">
     </div>
 </div>
 
-<div>
-    <div style="width: 60%; float: left; margin-right: 10px">
+####Find Similar
+<div class="wrapper">
+    <div class="leftcol">
     </div>
-    <div style="width: 30%; float: left">
-    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-5.png"></img>
-    </div>
-</div>
-
-<div>
-    <div style="width: 60%; float: left; margin-right: 10px">
-    </div>
-    <div style="width: 30%; float: left">
-    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-6.png"></img>
+    <div class="rightcol">
+    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-findsimilar.png">
     </div>
 </div>
 
-<div>
-    <div style="width: 60%; float: left; margin-right: 10px">
+####Language Identification
+<div class="wrapper">
+    <div class="leftcol">
     </div>
-    <div style="width: 30%; float: left">
-    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-7.png"></img>
-    </div>
-</div>
-
-<div>
-    <div style="width: 60%; float: left; margin-right: 10px">
-    </div>
-    <div style="width: 30%; float: left">
-    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-8.png"></img>
+    <div class="rightcol">
+    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-languageidentification.png"
     </div>
 </div>
 
-<div>
-    <div style="width: 60%; float: left; margin-right: 10px">
+####Search Index
+<div class="wrapper">
+    <div class="leftcol">
     </div>
-    <div style="width: 30%; float: left">
-    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-9.png"></img>
-    </div>
-</div>
-
-<div>
-    <div style="width: 60%; float: left; margin-right: 10px">
-    </div>
-    <div style="width: 30%; float: left">
-    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-10.png"></img>
+    <div class="rightcol">
+    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-searchindex.png">
     </div>
 </div>
 
+####Sentiment Analysis
+<div class="wrapper">
+    <div class="leftcol">
+    </div>
+    <div class="rightcol">
+    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-sentimentanalysis.png">
+    </div>
+</div>
+
+####Text Tokenizer
+<div class="wrapper">
+    <div class="leftcol">
+    </div>
+    <div class="rightcol">
+    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-texttokenizer-1.png">
+    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-texttokenizer-2.png">
+    	<img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/hp-idol-ondemand/hp-idol-action-texttokenizer-3.png">
+    </div>
+</div>

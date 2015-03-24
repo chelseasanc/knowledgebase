@@ -1,0 +1,23 @@
+
+**API**
+API stands for Application Programming Interface. Basically, it’s a library of code that the creators of an application make public so other applications can interface with their product. 
+
+Traditionally, to integrate your app with another app your developers would have to learn the ins and outs of the other app’s API. Here at Azuqua we think this is nonsense. We make our developers do API integration so your team doesn’t have to. You’re welcome. 
+
+**Action**
+Action is a blanket term to describe all the things you can do in your apps using Azuqua. When you take data from one channel and do something with it (for example, getting a contact’s Twitter handle from the Full Contact card and then using it to tweet a thank-you in Twitter) you are taking an Action. 
+
+**Channels**
+Channels are all the applications we can connect. We offer new Channels all the time, but if you don’t see one that you want, send an email to support and we'll start working on it right away. Or, with a little programming knowledge, you can quickly build your own custom channel using the HTTP Channel. 
+
+**Event**
+Events start a Flõ. Azuqua monitors the Channel you want to watch for the event you choose, and every time it occurs we’ll automatically start your Flõ. [Read more about Events]().
+
+**Function**
+Functions are logic, math, and analytical steps you can add to your Fl&otilde; to transform your data as it moves through the cloud. Functions let you do anything from something simple (like adding two numbers together) to something pretty complicated (like creating certain conditions so your Fl&otilde; will only run when those conditions are met). [Read more about Functions](). 
+
+**Flõ**
+A Fl&otilde; is a string of Channels and Functions, starting with an Event in one Channel and ending with one or more Actions in that Channel or others. [Read more about building Fl&otilde;s]().
+
+**Record**
+Record is the generic term for a collection of data kept by an app. For example, in sales apps there are lead records and contact records. In a social media app, there are records about users and the content they create. Azuqua works by fluidly moving records through the cloud. Whenever possible, we use terms specific to the app to describe records (we'll call it a "tweet" not a "twitter record"). 
