@@ -5,16 +5,25 @@
 
 ####Authorization
 
+####Events
+Events start Flõs for your user. Depending on 
+
+1. Develop Events based on user needs, not just on your API's capabilities. Don't dump 
+
+collections break
+
 ####Events and Actions
 A few guidelines for building Events and Actions for your channel. General rules: 
 
-1. Events and Actions shouldn't reflect how your API works, they should reflect how your user interacts with the App. Think about the use cases that will be most valuable to your user.
+1. Events and Actions shouldn't reflect how your API works, they should reflect how your user interacts with your App.  
 2. All display names should be in title case (if you’re not sure,  http://www.titlecapitalization.com is a good resource).
 3. Keep display names short. 2-3 words is preferable, 5 is too many.
 4. Azuqua uses naming conventions for consistency, so if you can use them you should. But, if your app's language doesn't work within this framework, use language that your user will understand. 
 
 	####Events
-	1. Go beyond "Monitor." Use Event names to specifically describe the Event that will start the Fl&otilde;, and break  . For example, “New Tweet” is a better name for an Event than “Monitor Twitter Feed” because it specifically lets the user know what will trigger the Fl&otilde;. 
+	1. 
+ If your API has a general monitor method, break it down into several events using filters. 
+2. Go beyond "Monitor." Use Event names to specifically describe the Event that will start the Fl&otilde;.For example, “New Tweet” is a better name for an Event than “Monitor Twitter Feed” because it specifically lets the user know what will trigger the Fl&otilde;. 
 3. "New ___" or Updated ___" are good fallbacks, but use language specific to your app. 
 
 

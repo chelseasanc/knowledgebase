@@ -1,0 +1,231 @@
+<ol>
+    <li><a href="#Introduction">Introduction</a></li>
+    <li><a href="#Setting-Up-Your-Account">Setting Up Your Account</a></li>
+    <li><
+Build an Integration
+Build an API
+Getting Your Access Key and Access Secret
+Using the Client Libraries
+Glossary
+
+Introduction 
+Using the Azuqua Web API, you can build your own APIs, connect your app to major SaaS services, and build integrated workflows (or Flõs) into your application. Using the Azuqua libraries, you can invoke Flõs from your external application or website in your language of choice. 
+
+Build a webhook that monitors for an Event in your app, then invoke a Flõ that will execute Action steps in other apps. 
+
+You can also build apps by connecting popular SaaS applications in a visual designer. 
+This tutorial will walk you through how to:
+Sign up for the Azuqua platform
+Locate and use your API keys
+Build an App
+Build an API
+
+Setting Up Your Account
+To be able to use Azuqua’s API, you first need to set up an account. You can try a free trial for 14 days, and then upgrade to a paid plan (Personal, Professional or Enterprise). To sign up, visit azuqua.com/signup. 
+GET STARTED button
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Build an Integration
+WALKTHROUGH Video for developers
+The Azuqua platform allows you to build complex integrations with a simple interface. You don’t have to build any custom connectors or directly deal with APIs. String together SaaS applications, drag data from one application then drop it into another, and 
+ to create apps via drag and drop. Save time integrating by creating Flõs that run on scheduled intervals. Simply choose a monitor to start the Flõ and then the duration interval is determined by the plan you have chosen. Flõs on the Professional plan run with a scheduled interval of 5 minutes. Azuqua keeps track of the last data retrieved through a monitored Flõ to ensure that the retrieved data set is kept to a relevant minimum. 
+
+This example will notify you via SMS when the event of interest, a new case in Salesforce, occurs.
+
+
+
+Select a starting Channel and event that you would like to monitor. This example monitors Salesforce for new Cases.
+
+
+Incorporate logic functions. This scenario concatenates two inputs to consolidate text for the SMS content field. 
+
+
+
+Take action when the event of interest occurs. With the Azuqua platform, each cloud service is packaged into Channels that integrate seamlessly with each other. Send an SMS to a relevant team member via Twilio.
+
+
+
+Save and activate your Flõ to run it automatically, monitoring your starting Event, and executing the process. You can try this Flõ here.
+
+
+
+Build an API
+WALKTHROUGH Video for developers
+You can also use the Azuqua platform to spin up your own API. To expose a Flõ as a RESTful API endpoint, you will first need to set up the designer with an HTTP Flõ. This event signals to the platform that this particular Flõ is not to be run on a scheduled basis, but rather when it is invoked from an external API you set. Using the HTTP Channel, you can connect your service to Azuqua and build a flexible API in minutes. 
+
+For this example, we’ll create a Flõ that adds two numbers together and returns the sum back to us. We will subsequently call this Flõ from our server and explore how we can invoke it from another service.
+
+Find HTTP in the Channels menu on the right-hand side of the designer and click it to display the list of Events. 
+Choose the “Post” event to add the card to the designer. 
+
+
+Click on the blue arrow to add parameters to the card, then name them and press enter. Here we are entering the attributes that we expect as input for this Flõ. When we invoke this Flõ we will be sending these attributes to this Flõ. After you’ve entered parameter names, the fields will change into draggable data. 
+
+ Set up the process you want to activate with this API call. In this tutorial, we’re going to use a simple add function as an example. 
+
+Drag your data from the Post card to an empty field on another card.          
+
+To return data from the Flõ, find the HTTP channel again and add the “Return” card to the Flõ. Click the blue arrow to add and name data 	fields.  
+
+Drag the result from the Add card the the Return card. 
+
+Click “Save Flõ” to save your changes, then click “Click to Run Flõ” to activate it. 
+To turn this Flõ into a RESTful API endpoint, go to “My Flõs.” Find the Flõ you’ve just saved, then click the “...” button to reveal more options. Click on “API Access.”
+
+
+Choose the level of security you would like for this endpoint. Azuqua supports three levels of security; by default your Flõ is set to the most secure level. If you would like to access this Flõ from anywhere or let other people use it, you may select “From anywhere. This Flõ will then be open and anyone can invoke it using the URL provided.
+  
+In order to invoke this Flõ from an external trusted service where you want to setup a webhook and run the Flõ when something happens in that system, you may choose “From a trusted server.” Azuqua will generate a unique URL and client token, and you can then use that entire URL with client token to invoke this Flõ.
+ 
+
+For most secure scenarios or when you are invoking this Flõ from your servers, choose “From my server”, where an access-key and access-secret are used for data exchange and invocation.
+  
+
+Azuqua has also created helper libraries in various languages to make it easy to access Flõs from your own code. These libraries can be found at https://github.com/azuqua. 
+
+Using the Client Libraries
+
+Glossary
+
+With Azuqua, you can create Flõs (business processes across multiple apps), that can run on demand or on specified intervals. The platform also allows you to expose these Flõs as RESTful endpoints so you can take any process and turn it into a secure API within minutes. This lets you create custom APIs around your processes that you can securely invoke on demand. This is advantageous in many scenarios such as creating a process around an older system and exposing it as a RESTful endpoint. There are four elements to creating a Flõ:
+
+
+Channel
+A Channel is an interface to an external app or cloud service. A Channel handles the authentication and connectivity with the external service. i.e. The Gmail channel connects to Gmail, and authenticates the user against all available actions in the Channel. Click here to see all available Channels.
+
+
+Event
+An Event is what happens on the external service that Azuqua listens and monitors for. For Gmail, an Event is receipt of an email. In a monitored Flõ, Azuqua listens and monitors for these Events and the Flõ is activated when an Event of interest occurs.
+Action
+An Action is what you want to perform on the external service as part of the Flõ. An Action can be a part of any Flõ, be it monitored or exposed as an API. For Gmail, a possible Action is sending an email.
+Functions
+Azuqua has an extensive library of Functions for math operations, logic and decision making, string operations and natural language processing. By adding functions into a Flõ, you can make it smarter and often automate human-intensive tasks. i.e Article Summary is a natural language function, that summarizes a large body of text to extract the relevant components.
+
+Absolute Value
+Date and Time
+Mod
+Search from Back
+Add
+Divide
+Multiply
+Sentiment Analyzer
+Article Summary
+Entities
+Power
+Sign
+Ceiling
+Exp
+Random
+Smaller
+Character At
+Factorial
+Random Integer
+Square Root
+Classification
+Floor
+Random String
+Subtract
+Concatenate
+Hashtag Suggestion
+Replace
+Tweet Parser
+Concept
+Log
+Round
+Upper Case
+Continue If
+Lower Case
+Search
+UUID
+Cube
+Match
+
+
+
+
+
+
+Resources
+
+To contact us regarding API questions or errors, please email dev@azuqua.com
+To access our GitHub library, please visit https://github.com/azuqua
+
