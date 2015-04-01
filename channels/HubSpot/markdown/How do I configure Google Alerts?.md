@@ -5,4 +5,4 @@ You can use Google Alerts to start a Flõ whenever there's a new result about a 
 3. Go to your Google Alerts account and set up an alert if you haven't done so already. 
 4. Next to the name of the alert you would like to use to trigger the Flõ, click the pencil icon. 
 5. From the "Deliver to" drop-down menu, select "RSS feed."
-6. Click Update alert to save 
+6. Click "Update alert" to save 
