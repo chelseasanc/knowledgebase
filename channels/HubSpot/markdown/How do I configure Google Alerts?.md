@@ -10,5 +10,6 @@ You can use Google Alerts to start a Flõ whenever there's a new result about a 
 6. Click "Update alert" to save the changes to your alert.
 7. Back on the main alerts page, click the RSS icon.
 <img style="width: 100%" src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/google-alerts/google-alerts-config-3.png">
-8. You should now be on the RSS feed page. Copy the URL and paste it into the input field in the Google Alerts card.
+8. Copy the URL from the RSS feed page.
 <img style="width: 100%" src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/google-alerts/google-alerts-config-4.png">
+9. Return to the Azuqua designer. Paste the feed URL into the input field on the Google Alerts card and hit enter to save it.
