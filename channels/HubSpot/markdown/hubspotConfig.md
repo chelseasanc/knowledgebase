@@ -8,11 +8,3 @@
 5. Click “Save Configuration.”
 
 Now, you can use this configuration every time you create a Flõ. You can also create multiple configurations for each channel to link all your accounts to Azuqua. [Read more about managing your configurations from the Settings page.]()
-<div>
-    <div style="width: 60%; float: left; margin-right: 10px">
-    </div>
-    <div style="width: 30%, float: left">
-    </div>
-</div>
-
-https://s3.amazonaws.com/azuqua_static/help-center/Channels/

@@ -1,0 +1,190 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>What kind of Actions can I take with Visual Studio Online?</title>
+
+</head>
+<body>
+<p>Actions are the automatic steps you can take in an app using Azuqua. Creating or modifying a record, posting to social media, running analytics: if your app can do it, Azuqua can do it. </p>
+
+<ol>
+<li>Set up your Fl&otilde;. Actions only work after you&#39;ve set up a starting Event, so make sure you&#39;ve done that first. <a href="">Here&#39;s how you can start a Fl&otilde; with Visual Studio Online</a>.</li>
+<li>Find Visual Studio Online in the Channels menu on the right-hand side of the designer and click it to display the list of Actions.</li>
+<li>Click on the Action you want to use to add the card to the designer. </li>
+<li>Configure the card. You can choose an existing configuration from the drop-down list or <a href="">create a new configuration</a>. Once this is done the card will flip over automatically. </li>
+<li>Now, you can drag or type data into the input fields and drag the results to empty fields on other cards. Read more about how each Action works below.</li>
+</ol>
+
+<h4 id="toc_0">Add Link to Work Item</h4>
+
+<p>Use this Action to add a link to an existing work item. </p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code> the Visual Studio account you want to use </li>
+<li><code>Projects</code>, the project connected to the work item</li>
+</ul>
+
+<p><em>Input fields:</em></p>
+
+<ul>
+<li><code>workItemRef</code>, the reference ID of the work item</li>
+<li><code>link</code>, the url that you want to add to the work item</li>
+<li><code>comment</code>, a comment about this link</li>
+</ul>
+
+<p><em>Output data:</em></p>
+
+<ul>
+<li><code>id</code>, the ID of the note on the work item</li>
+<li><code>rev</code>, the revision number of the work item</li>
+<li><code>url</code>, the url that you have just added to the work item</li>
+<li><code>web_url</code>, the url of the work item</li>
+<li><code>project</code>, the name of the project associated with the work item</li>
+<li><code>area</code>, the path to the project area associated with the work item</li>
+<li><code>iteration</code>, the iteration of the project</li>
+<li><code>work_item_type</code>, the type of the work item</li>
+<li><code>created_date</code>, the date the work item was created</li>
+<li><code>created_by</code>, the name of the user who created the work item</li>
+<li><code>changed_date</code>, the date when the item was last changed (UTF)</li>
+<li><code>changed_by</code>, the name of the user who last changed the work item</li>
+<li><code>title</code>, the title of the work item</li>
+<li><code>description</code>, the description of the work item</li>
+<li><code>state</code>, the state of the work item (e.g. Active, New, Closed, Removed)</li>
+<li><code>reason</code>, the reason for the last change in state of the work item</li>
+<li><code>assigned_to</code>, the name of the user assigned to the work item</li>
+</ul>
+
+<h4 id="toc_1">Create Work Item</h4>
+
+<p>Use this Action to create a new work item for this project.</p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code>, the Visual Studio account you want to use </li>
+<li><code>Projects</code>, the project connected to the work item</li>
+<li><code>Work Item Types</code>, the type of work item you want to create</li>
+</ul>
+
+<p><em>Input fields:</em></p>
+
+<ul>
+<li><code>title text</code>, the title of the new work item</li>
+<li><code>description text</code>, the description of the new work item</li>
+</ul>
+
+<p><em>Output data:</em></p>
+
+<ul>
+<li><code>id</code>, the ID of the work item</li>
+<li><code>rev</code>, the revision number of the work item</li>
+<li><code>url</code>, the url that you have just added to the work item</li>
+<li><code>web_url</code>, the url of the work item</li>
+<li><code>project</code>, the name of the project associated with the work item</li>
+<li><code>area</code>, the path to the project area associated with the work item</li>
+<li><code>iteration</code>, the iteration of the project</li>
+<li><code>work_item_type</code>, the type of the work item</li>
+<li><code>created_date</code>, the date the work item was created</li>
+<li><code>created_by</code>, the name of the user who created the work item</li>
+<li><code>changed_date</code>, the date when the item was last changed (UTF)</li>
+<li><code>changed_by</code>, the name of the user who last changed the work item</li>
+<li><code>title</code>, the title of the work item</li>
+<li><code>description</code>, the description of the work item</li>
+<li><code>state</code>, the state of the work item (e.g. Active, New, Closed, Removed)</li>
+<li><code>reason</code>, the reason for the last change in state of the work item</li>
+<li><code>assigned_to</code>, the name of the user assigned to the work item</li>
+</ul>
+
+<h4 id="toc_2">Read Work Item</h4>
+
+<p>Use this Action to read data from a work item using the itemID.</p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code>, the Visual Studio account you want to use </li>
+</ul>
+
+<p><em>Input fields:</em></p>
+
+<ul>
+<li><code>id</code>, the ID of the work item you want to read</li>
+</ul>
+
+<p><em>Output data:</em></p>
+
+<ul>
+<li><code>id</code>, the ID of the work item</li>
+<li><code>rev</code>, the revision number of the work item</li>
+<li><code>url</code>, the url that you have just added to the work item</li>
+<li><code>web_url</code>, the url of the work item</li>
+<li><code>project</code>, the name of the project associated with the work item</li>
+<li><code>area</code>, the path to the project area associated with the work item</li>
+<li><code>iteration</code>, the iteration of the project</li>
+<li><code>work_item_type</code>, the type of the work item</li>
+<li><code>created_date</code>, the date the work item was created</li>
+<li><code>created_by</code>, the name of the user who created the work item</li>
+<li><code>changed_date</code>, the date when the item was last changed (UTF)</li>
+<li><code>changed_by</code>, the name of the user who last changed the work item</li>
+<li><code>title</code>, the title of the work item</li>
+<li><code>description</code>, the description of the work item</li>
+<li><code>state</code>, the state of the work item (e.g. Active, New, Closed, Removed)</li>
+<li><code>reason</code>, the reason for the last change in state of the work item</li>
+<li><code>assigned_to</code>, the name of the user assigned to the work item</li>
+</ul>
+
+<h4 id="toc_3">Send Team Room Message</h4>
+
+<p>Use this Action to post a new message to a team room.</p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code>, the Visual Studio account you want to use </li>
+<li><code>Team Rooms</code>, the Team Room you want to post in</li>
+</ul>
+
+<p><em>Input data:</em></p>
+
+<ul>
+<li><code>message text</code>, the message you want to post</li>
+</ul>
+
+<h4 id="toc_4">Trigger Build</h4>
+
+<p>Use this action to queue a new build.</p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code>, the Visual Studio account you want to use </li>
+<li><code>Projects</code>, the project connected to the work item</li>
+<li><code>Build Definition</code>, the build definition you want to use</li>
+</ul>
+
+<p><em>Output data:</em></p>
+
+<ul>
+<li><code>id</code>, the ID of the build</li>
+<li><code>url</code>, the URL of the build</li>
+<li><code>status</code>, the build status</li>
+<li><code>reason</code>, the reason code associated with the build</li>
+<li><code>priority</code>, the priority of this build</li>
+<li><code>definition_id</code>, the ID of the build definition</li>
+<li><code>definition_name</code>, the name of the build definition</li>
+<li><code>queue_position</code>, the position of the build in the queue</li>
+<li><code>queue_time</code>, the time the build was added to the queue</li>
+<li><code>project_id</code>, the ID of the project</li>
+<li><code>project_name</code>, the name of the project</li>
+<li><code>requested_for_id</code>, the ID of the user who requested the build</li>
+<li><code>requested_for_unique_name</code>, the username of the user requested the build</li>
+<li><code>requested_for_display_name</code>, the display name of the user who requested the build</li>
+</ul>
+
+
+</body>
+
+</html>

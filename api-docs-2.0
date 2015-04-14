@@ -1,0 +1,18 @@
+Invoke
+
+
+
+Get Flos
+
+GET https://api.azuqua.com/flo/{id}/invoke Anything more???
+
+Expected body request:
+
+{ 
+  "Content-Type": "application/json"
+  "Content-Length":
+  "x-api-accessKey":
+  "x-api-hash":
+  "x-api-timestamp":
+  *Custom Parameters*
+}

@@ -1,0 +1,389 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>How do I start a Flõ with Visual Studio Online?</title>
+
+</head>
+<body>
+<p>Events are the triggers that start your Fl&otilde;. Whenever your starting Event happens, the process you&#39;ve set up will get to work.  </p>
+
+<ol>
+<li>Find Visual Studio Online in the Channels menu on the right-hand side of the designer and click it to display the list of Events.</li>
+<li>Click on the Event you want to use to add the card to the designer. </li>
+<li>Configure the card. You can choose an existing configuration from the drop-down list or <a href="">create a new configuration</a>. Once this is done the card will flip over automatically. </li>
+<li>Now, add other cards to your Fl&otilde;. Actions on other channels, functions, whatever you want to happen next. </li>
+<li>Drag data from the Event card to empty fields on other cards and continue building your Fl&otilde;. Read more about each Event:</li>
+</ol>
+
+<h4 id="toc_0">Build Completed</h4>
+
+<p>Start Flõ when a build finishes.</p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code>, the Visual Studio account you want to use </li>
+<li><code>Projects</code>, the project where the build took place</li>
+<li><code>Builds</code>, the definition of the build to watch for</li>
+<li><code>Build Status</code>, the build status to watch for</li>
+</ul>
+
+<p><em>Output data:</em></p>
+
+<ul>
+<li><code>event_id</code>, the unique numeric ID of this event in Visual Studio Online</li>
+<li><code>event_type</code>, the type of this event</li>
+<li><code>event_date</code>, the date of this event</li>
+<li><code>message_text</code>, the message associated with this Event in plaintext</li>
+<li><code>message_html</code>, the message associated with this Event in HTML</li>
+<li><code>message_markdown</code>, the message asosciated with this event in Markdown syntax</li>
+<li><code>detailed_message_text</code>, the detailed message associated with this Event in plaintext</li>
+<li><code>detailed_message_html</code>, the detailed message associated with this Event in HTML</li>
+<li><code>detailed_message_markdown</code>, the detailed message associated with this Event in Markdown syntax</li>
+<li><code>build_id</code>, the ID of the build</li>
+<li><code>build_url</code>, the URL of the build</li>
+<li><code>build_number</code>, the </li>
+<li><code>start_time</code>, the time the build started (UTF)</li>
+<li><code>finish_time</code>, the time the build finishe (UTF)</li>
+<li><code>reason</code>, the reason code associated with the build</li>
+<li><code>status</code>, the build status</li>
+<li><code>drop_location</code>, relative path to the build output drop folder</li>
+<li><code>drop_type</code>, the type of the drop folder</li>
+<li><code>drop_download_url</code>, the full url to the drop folder where the build can be downloaded</li>
+<li><code>log_type</code>, the build log type</li>
+<li><code>log_download_url</code>, the full url to the folder where the build log can be downloaded</li>
+<li><code>retains_indefinitely</code>, a boolean that defaults to &quot;false.&quot; When &quot;true,&quot; the build will be maintained regardless of the retention rules used by the build definition</li>
+<li><code>has_diagnostics</code>, a boolean that defaults to &quot;true.&quot; Determines if the build diagnostics will be logged</li>
+<li><code>definition_id</code>, the id of the build definition </li>
+<li><code>definition_name</code>, the name of the build definition</li>
+<li><code>definition_type</code>, the build definition type</li>
+<li><code>queue_id</code>, the numeric ID of the queue</li>
+<li><code>queue_name</code>, the display name of the queue</li>
+<li><code>queue_type</code>, the type of the queue (e.g. buildController)</li>
+<li><code>request_id</code>, the numeric ID of the build request</li>
+<li><code>requested_for_id</code>, the UUID of the user this build was requested for</li>
+<li><code>requested_for_unique_name</code>, the username/email of the user this build was requested for</li>
+<li><code>requested_for_display_name</code>, the display name of the user this build was requested for </li>
+</ul>
+
+<h4 id="toc_1">Code Checked in</h4>
+
+<p>Start Flõ when a changeset is checked into version control.</p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code>, the Visual Studio account you want to use </li>
+<li><code>Projects</code>, the Team Foundation project you want to monitor for check ins</li>
+<li><code>Under path</code>, the relative path to the directory you want to monitor</li>
+</ul>
+
+<p><em>Output data:</em></p>
+
+<ul>
+<li><code>event_id</code>, the unique numeric ID of this event in Visual Studio Online</li>
+<li><code>event_type</code>, the type of this event</li>
+<li><code>event_date</code>, the date of this event</li>
+<li><code>message_text</code>, the message associated with this Event in plaintext</li>
+<li><code>message_html</code>, the message associated with this Event in HTML</li>
+<li><code>message_markdown</code>, the message asosciated with this event in Markdown syntax</li>
+<li><code>detailed_message_text</code>, the detailed message associated with this Event in plaintext</li>
+<li><code>detailed_message_html</code>, the detailed message associated with this Event in HTML</li>
+<li><code>detailed_message_markdown</code>, the detailed message associated with this Event in Markdown syntax</li>
+<li><code>changeset_id</code>, the numeric ID of the changeset</li>
+<li><code>changeset_url</code>, the url of the changeset</li>
+<li><code>created_date</code>, the date the changeset was created</li>
+<li><code>comment</code>, the comment associated with this check in</li>
+<li><code>checkedin_by_id</code>, the UUID of the user who checked in the changeset</li>
+<li><code>checkedin_by_display_name</code>, the display name of the user who checked in the changeset</li>
+<li><code>checkedin_by_unique_name</code>, the username/email of the user who checked in the changeset</li>
+<li><code>author_id</code>, the UUID of the user who authored the changeset</li>
+<li><code>author_display_name</code>, the display name of the user who authored the changeset</li>
+<li><code>author_unique_name</code>, the username/email of the user who authored the changeset</li>
+</ul>
+
+<h4 id="toc_2">Code Pushed</h4>
+
+<p>Start Flõ when code is pushed to a Git repository.</p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code>, the Visual Studio account you want to use </li>
+<li><code>Projects</code>, the Git project you want to monitor </li>
+<li><code>Repository</code>, the repository you want to monitor</li>
+<li><code>Branch</code>, the branch you want to monitor </li>
+</ul>
+
+<p><em>Output data:</em></p>
+
+<ul>
+<li><code>event_id</code>, the unique numeric ID of this event in Visual Studio Online</li>
+<li><code>event_type</code>, the type of this event</li>
+<li><code>event_date</code>, the date of this event</li>
+<li><code>message_text</code>, the message associated with this Event in plaintext</li>
+<li><code>message_html</code>, the message associated with this Event in HTML</li>
+<li><code>message_markdown</code>, the message asosciated with this event in Markdown syntax</li>
+<li><code>detailed_message_text</code>, the detailed message associated with this Event in plaintext</li>
+<li><code>detailed_message_html</code>, the detailed message associated with this Event in HTML</li>
+<li><code>detailed_message_markdown</code>, the detailed message associated with this Event in Markdown syntax</li>
+<li><code>push_id</code>, the numeric ID of the push</li>
+<li><code>push_date</code>, the date the code was pushed</li>
+<li><code>push_url</code>, the url where the push is located</li>
+<li><code>repo_id</code>, the numeric ID of the repository the code was pushed to</li>
+<li><code>repo_name</code>, the display name of the repository the code was pushed to</li>
+<li><code>repo_remote_url</code>, the remote url of the repository the code was pushed to</li>
+<li><code>project_id</code>, the numeric ID of the project</li>
+<li><code>project_name</code>, the name of the project</li>
+<li><code>author_id</code>, the UUID of the user who pushed the code</li>
+<li><code>author_display_name</code>, the display name of the user who pushed the code</li>
+<li><code>author_unique_name</code>, the username/email of the user who pushed the code</li>
+</ul>
+
+<h4 id="toc_3">Pull Request Created</h4>
+
+<p>Start Flõ when a pull request is created in a Git repository.</p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code>, the Visual Studio account you want to use </li>
+<li><code>Projects</code>, the Git project you want to monitor </li>
+<li><code>Repository</code>, the repository you want to monitor</li>
+<li><code>Branch</code>, the branch you want to monitor </li>
+</ul>
+
+<p><em>Output data:</em></p>
+
+<ul>
+<li><code>event_id</code>, the unique numeric ID of this event in Visual Studio Online</li>
+<li><code>event_type</code>, the type of this event</li>
+<li><code>event_date</code>, the date of this event</li>
+<li><code>message_text</code>, the message associated with this Event in plaintext</li>
+<li><code>message_html</code>, the message associated with this Event in HTML</li>
+<li><code>message_markdown</code>, the message asosciated with this event in Markdown syntax</li>
+<li><code>detailed_message_text</code>, the detailed message associated with this Event in plaintext</li>
+<li><code>detailed_message_html</code>, the detailed message associated with this Event in HTML</li>
+<li><code>detailed_message_markdown</code>, the detailed message associated with this Event in Markdown syntax</li>
+<li><code>pull_request_id</code>, the ID of the pull request</li>
+<li><code>pull_request_url</code>, the url of the pull request</li>
+<li><code>pull_request_creation_date</code>, the date the pull request was created</li>
+<li><code>pull_request_status</code>, the status of the pull request (e.g. &quot;active&quot;)</li>
+<li><code>pull_request_title</code>, the title of the pull request</li>
+<li><code>pull_request_description</code>, the description of the pull request</li>
+<li><code>source_ref_name</code>, the relative path to the source code</li>
+<li><code>target_ref_name</code>, the relative path to the merge target</li>
+<li><code>merge_status</code>, the merge status (e.g. &quot;succeeded&quot;)</li>
+<li><code>repo_id</code>, the ID of the repository</li>
+<li><code>repo_url</code>, the url of the repository</li>
+<li><code>author_id</code>, the UUID of the user who created the pull request</li>
+<li><code>author_display_name</code>, the display name of the user who created the pull request</li>
+<li><code>author_unique_name</code>, the username/email of the user who created the pull request</li>
+</ul>
+
+<h4 id="toc_4">Pull Request Updated</h4>
+
+<p>Start Flõ when a pull request is updated.</p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code>, the Visual Studio account you want to use </li>
+<li><code>Projects</code>, the Git project you want to monitor </li>
+<li><code>Repository</code>, the repository you want to monitor</li>
+<li><code>Branch</code>, the branch you want to monitor </li>
+<li><code>Change</code>, the type of update to watch for</li>
+</ul>
+
+<p><em>Output data:</em></p>
+
+<ul>
+<li><code>event_id</code>, the unique numeric ID of this event in Visual Studio Online</li>
+<li><code>event_type</code>, the type of this event</li>
+<li><code>event_date</code>, the date of this event</li>
+<li><code>message_text</code>, the message associated with this Event in plaintext</li>
+<li><code>message_html</code>, the message associated with this Event in HTML</li>
+<li><code>message_markdown</code>, the message asosciated with this event in Markdown syntax</li>
+<li><code>detailed_message_text</code>, the detailed message associated with this Event in plaintext</li>
+<li><code>detailed_message_html</code>, the detailed message associated with this Event in HTML</li>
+<li><code>detailed_message_markdown</code>, the detailed message associated with this Event in Markdown syntax</li>
+<li><code>pull_request_id</code>, the ID of the pull request</li>
+<li><code>pull_request_url</code>, the url of the pull request</li>
+<li><code>pull_request_creation_date</code>, the date the pull request was created</li>
+<li><code>pull_request_status</code>, the status of the pull request (e.g. &quot;active&quot;)</li>
+<li><code>pull_request_title</code>, the title of the pull request</li>
+<li><code>pull_request_description</code>, the description of the pull request</li>
+<li><code>source_ref_name</code>, the relative path to the source code</li>
+<li><code>target_ref_name</code>, the relative path to the merge target</li>
+<li><code>merge_status</code>, the merge status (e.g. &quot;succeeded&quot;)</li>
+<li><code>repo_id</code>, the ID of the repository</li>
+<li><code>repo_url</code>, the url of the repository</li>
+<li><code>author_id</code>, the UUID of the user who created the pull request</li>
+<li><code>author_display_name</code>, the display name of the user who created the pull request</li>
+<li><code>author_unique_name</code>, the username/email of the user who created the pull request</li>
+</ul>
+
+<h4 id="toc_5">Team Room Message Posted</h4>
+
+<p>Start Flõ when a new message is posted to a team room.</p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code>, the Visual Studio account you want to use </li>
+<li><code>Projects</code>, the project you want to monitor</li>
+<li><code>Room</code>, the team room you want to monitor</li>
+<li><code>Message contains string</code> (optional), filter messages containing this string</li>
+</ul>
+
+<p><em>Output data:</em></p>
+
+<ul>
+<li><code>event_id</code>, the unique numeric ID of this event in Visual Studio Online</li>
+<li><code>event_type</code>, the type of this event</li>
+<li><code>event_date</code>, the date of this event</li>
+<li><code>message_text</code>, the message associated with this Event in plaintext</li>
+<li><code>message_html</code>, the message associated with this Event in HTML</li>
+<li><code>message_markdown</code>, the message asosciated with this event in Markdown syntax</li>
+<li><code>detailed_message_text</code>, the detailed message associated with this Event in plaintext</li>
+<li><code>detailed_message_html</code>, the detailed message associated with this Event in HTML</li>
+<li><code>detailed_message_markdown</code>, the detailed message associated with this Event in Markdown syntax</li>
+<li><code>message_id</code>, the ID of the message in the Team Room</li>
+<li><code>message_content</code>, the content of the message</li>
+<li><code>message_type</code>, the type of the message</li>
+<li><code>posted_time</code>, the time the message was posted (UTF)</li>
+<li><code>posted_room_id</code>, the ID of the team room where the message was posted</li>
+<li><code>author_id</code>, the UUID of the user who posted the message</li>
+<li><code>author_display_name</code>, the display name of the user who posted the message</li>
+<li><code>author_unique_name</code>, the username/email of the user who posted the message</li>
+</ul>
+
+<h4 id="toc_6">Work Item Commented On</h4>
+
+<p>Start Flõ when a user comments on a work item.</p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code>, the Visual Studio account you want to use </li>
+<li><code>Projects</code>, the project you want to monitor</li>
+<li><code>Area path</code>, the area you want to monitor</li>
+<li><code>Work item type</code>, the type of work item you want to watch for</li>
+<li><code>Contains string</code> (optional), monitor for comments containing this string</li>
+</ul>
+
+<p><em>Output data:</em></p>
+
+<ul>
+<li><code>event_id</code>, the unique numeric ID of this event in Visual Studio Online</li>
+<li><code>event_type</code>, the type of this event</li>
+<li><code>event_date</code>, the date of this event</li>
+<li><code>message_text</code>, the message associated with this Event in plaintext</li>
+<li><code>message_html</code>, the message associated with this Event in HTML</li>
+<li><code>message_markdown</code>, the message asosciated with this event in Markdown syntax</li>
+<li><code>detailed_message_text</code>, the detailed message associated with this Event in plaintext</li>
+<li><code>detailed_message_html</code>, the detailed message associated with this Event in HTML</li>
+<li><code>detailed_message_markdown</code>, the detailed message associated with this Event in Markdown syntax</li>
+<li><code>workitem_id</code>, the ID of the work item</li>
+<li><code>workitem_rev</code>, the revision number of the work item</li>
+<li><code>workitem_url</code>, the url of the work item</li>
+<li><code>web_url</code>, the url of any links attached to the work item</li>
+<li><code>comment</code>, the text of the comment</li>
+<li><code>project</code>, the name of the project associated with the work item</li>
+<li><code>area</code>, the name of the area associate with the work item</li>
+<li><code>iteration</code>, the iteration of the project associated with the work item</li>
+<li><code>work_item_type</code>, the type of the work item (i.e. task, bug, backlog)</li>
+<li><code>created_date</code>, the date the work item was created</li>
+<li><code>created_by</code>, the display name and email/username of the user who created the work item</li>
+<li><code>changed_date</code>, the date the work item was last changed</li>
+<li><code>changed_by</code>, the display name and email/username of the user who last changed the work item</li>
+<li><code>title</code>, the title of the work item</li>
+<li><code>description</code>, the description of the work item</li>
+<li><code>state</code>, the state of the work item (e.g. To Do)</li>
+<li><code>reason</code>, the reason of the last change to the state of the work item</li>
+<li><code>assigned_to</code>, the display name and email/username of the user assigned to the work item</li>
+</ul>
+
+<h4 id="toc_7">Work Item Created</h4>
+
+<p>Start Flõ when a work item is created.</p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code>, the Visual Studio account you want to use </li>
+<li><code>Projects</code>, the project you want to monitor</li>
+<li><code>Area path</code>, the area you want to monitor</li>
+<li><code>Work item type</code>, the type of work item you want to watch for</li>
+</ul>
+
+<p><em>Output data:</em></p>
+
+<ul>
+<li><code>event_id</code>, the unique numeric ID of this event in Visual Studio Online</li>
+<li><code>event_type</code>, the type of this event</li>
+<li><code>event_date</code>, the date of this event</li>
+<li><code>message_text</code>, the message associated with this Event in plaintext</li>
+<li><code>message_html</code>, the message associated with this Event in HTML</li>
+<li><code>message_markdown</code>, the message asosciated with this event in Markdown syntax</li>
+<li><code>detailed_message_text</code>, the detailed message associated with this Event in plaintext</li>
+<li><code>detailed_message_html</code>, the detailed message associated with this Event in HTML</li>
+<li><code>detailed_message_markdown</code>, the detailed message associated with this Event in Markdown syntax</li>
+<li><code>workitem_id</code>, the ID of the work item</li>
+<li><code>workitem_rev</code>, the revision number of the work item</li>
+<li><code>workitem_url</code>, the url of the work item</li>
+<li><code>web_url</code>, the url of any links attached to the work item</li>
+<li><code>comment</code>, the text of the comment</li>
+<li><code>project</code>, the name of the project associated with the work item</li>
+<li><code>area</code>, the name of the area associate with the work item</li>
+<li><code>iteration</code>, the iteration of the project associated with the work item</li>
+<li><code>work_item_type</code>, the type of the work item (i.e. task, bug, backlog)</li>
+<li><code>created_date</code>, the date the work item was created</li>
+<li><code>created_by</code>, the display name and email/username of the user who created the work item</li>
+<li><code>changed_date</code>, the date the work item was last changed</li>
+<li><code>changed_by</code>, the display name and email/username of the user who last changed the work item</li>
+<li><code>title</code>, the title of the work item</li>
+<li><code>description</code>, the description of the work item</li>
+<li><code>state</code>, the state of the work item (e.g. To Do)</li>
+<li><code>reason</code>, the reason of the last change to the state of the work item</li>
+<li><code>assigned_to</code>, the display name and email/username of the user assigned to the work item</li>
+</ul>
+
+<h4 id="toc_8">Work Item Updated</h4>
+
+<p>Start Flõ when a work item is updated.</p>
+
+<p><em>Configuration:</em></p>
+
+<ul>
+<li><code>Your accounts</code>, the Visual Studio account you want to use </li>
+<li><code>Projects</code>, the project you want to monitor</li>
+<li><code>Area path</code>, the area you want to monitor</li>
+<li><code>Work item type</code>, the type of work item you want to watch for</li>
+</ul>
+
+<p><em>Output data:</em></p>
+
+<ul>
+<li><code>event_id</code>, the unique numeric ID of this event in Visual Studio Online</li>
+<li><code>event_type</code>, the type of this event</li>
+<li><code>event_date</code>, the date of this event</li>
+<li><code>message_text</code>, the message associated with this Event in plaintext</li>
+<li><code>message_html</code>, the message associated with this Event in HTML</li>
+<li><code>message_markdown</code>, the message asosciated with this event in Markdown syntax</li>
+<li><code>detailed_message_text</code>, the detailed message associated with this Event in plaintext</li>
+<li><code>detailed_message_html</code>, the detailed message associated with this Event in HTML</li>
+<li><code>detailed_message_markdown</code>, the detailed message associated with this Event in Markdown syntax</li>
+<li><code>workitem_id</code>, the ID of the work item</li>
+<li><code>workitem_rev</code>, the revision number of the work item</li>
+<li><code>workitem_url</code>, the url of the work item</li>
+<li><code>changed_date</code>, the date the work item was updated</li>
+<li><code>revised_by_id</code>, the UUID of the user who revised the work item</li>
+<li><code>revised_by_name</code>, the display name of the user who revised the work item</li>
+</ul>
+
+
+</body>
+
+</html>
