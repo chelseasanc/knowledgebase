@@ -20,7 +20,7 @@ Use this action to search for events on Eventbrite. Type in the search terms you
 
 *Output fields* :
 
-* `id`, the unqiue id of the event on Eventbrite
+* `id`, the unique ID of the event on Eventbrite
 * `title`, the title of the event 
 * `description`, the description of the event
 * `url`, the link to the event on Eventbrite

@@ -7,7 +7,7 @@ Actions are the automatic steps you can take with an app. Creating or modifying 
 5. Now, you can drag or type data into the input fields and drag the results to empty fields on other cards. Read more about how each action works below.
 
 **Lookup by Email**  
-Look up a contact's full information using their email. 
+Look up a contact's full information using their email. inp
 
 *Input fields:*
 
@@ -18,8 +18,8 @@ Look up a contact's full information using their email.
 * `givenName`, the first name associated with this email
 * `familyName`, the last name associated with this email
 * `twitter`, the Twitter handle associated with this email
-* `facebook`, the URl of the facebook associated with this email
-* `LinkedIn`, the URl of the LinkedIn profile associated with this email
+* `facebook`, the URL of the Facebook associated with this email
+* `LinkedIn`, the URL of the LinkedIn profile associated with this email
 
 <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/full-contact/full-contact-action-1.png"></img>
 
@@ -37,8 +37,8 @@ Look up a contact's full information using their phone number.
 * `givenName`, the first name associated with this phone number
 * `familyName`, the last name associated with this phone number
 * `twitter`, the Twitter handle associated with this phone number
-* `facebook`, the URl of the facebook associated with this phone number
-* `LinkedIn`, the URl of the LinkedIn profile associated with this phone number
+* `facebook`, the URL of the Facebook associated with this phone number
+* `LinkedIn`, the URL of the LinkedIn profile associated with this phone number
 
 <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/full-contact/full-contact-action-2.png"></img>
 
@@ -55,8 +55,8 @@ Look up a contact's full information using their Twitter handle.
 
 * `givenName`, the first name associated with this phone number
 * `familyName`, the last name associated with this phone number
-* `facebook`, the URl of the facebook profile associated with this phone number
-* `LinkedIn`, the URl of the LinkedIn profile associated with this phone number
+* `facebook`, the URL of the Facebook profile associated with this phone number
+* `LinkedIn`, the URL of the LinkedIn profile associated with this phone number
 
 <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/full-contact/full-contact-action-3.png"></img>
 

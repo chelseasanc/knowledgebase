@@ -89,7 +89,7 @@ Use this Action to read data from a work item using the itemID.
 
 * `id`, the ID of the work item
 * `rev`, the revision number of the work item
-* `url`, the url that you have just added to the work item
+* `url`, the url of any links associated with the work item
 * `web_url`, the url of the work item
 * `project`, the name of the project associated with the work item
 * `area`, the path to the project area associated with the work item

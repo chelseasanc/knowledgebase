@@ -30,7 +30,7 @@ Use this event to start a Fl&otilde; only when a new item (either a folder or a 
 * `rev`, the unique numeric ID associated with this revision of the file
 * `thumb_exists`, a boolean (true/false) that returns true if the file is an image that can be converted to a thumbnail
 * `bytes`, the file size in bytes
-* `modified`, the time and date that the file was added Dropbox, in standard format (e.g. "Fri, 13 Mar 2015 11:50:33 +0800)
+* `modified`, the time and date that the file was added to Dropbox, in standard format (e.g. "Fri, 13 Mar 2015 11:50:33 +0800)
 * `client_mtime`, the time and date that the file was last modified by the desktop client in standard format.
 * `path`, the path to the new item
 * `is_dir`, a boolean (true/false) that returns true if the new item is a directory, or folder.

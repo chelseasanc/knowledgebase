@@ -25,7 +25,7 @@ Now, click the gear in the corner of the card to flip it over.
 *  `Url`, the url of the result
 *  `Source`, the name of the news source or website the result comes from
 *  `Description`, a summary of the contents of the result
-*  `Date`, the date the result was posted
+*  `Date`, the date the result was published
 
 <img src="https://s3.amazonaws.com/azuqua_static/help-center/Channels/bing/bing-event-1-1.png"></img>
 

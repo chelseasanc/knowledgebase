@@ -38,7 +38,7 @@ Events are the triggers that start your Fl&otilde;. Whenever your starting Event
     		<li><code>first_name</code>, the first name of the attendee</li>
     		<li><code>last_name</code>, the last name of the attendee</li>
     		<li><code>email</code>, the email of the attendee</li>
-    		<li><code>order_id</code>, the id of the cancelled order</li>
+    		<li><code>order_id</code>, the id of the order</li>
     		<li><code>order_type</code>, the type of the order</li> 
     		<li><code>quantity</code>, the number of tickets ordered</li>
     		<li><code>amount_paid</code>, the amount paid for the order</li>

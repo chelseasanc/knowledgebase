@@ -71,6 +71,8 @@ Use this Action to extract entities from text
 </div>
 
 ####Find Similar
+Use this action to query HP Idol Databases for documents similar to your source document. 
+
 <div class="wrapper">
     <div class="leftcol">
     </div>
