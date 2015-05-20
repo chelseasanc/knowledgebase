@@ -31,8 +31,13 @@ Use this Action to read and extract data from a barcode image.
 
 *Input fields:*
 
-* `Reference`<!--According to the docs, reference is "An IDOL OnDemand reference obtained from either the Expand Container or Store Object API. The corresponding image is passed to the API" but users have no action that obtains this info. Can we add it?-->
+* `Reference`, an IDOL OnDemand reference obtained from either the Expand Container or Store Object API
 * `URL`, the public HTTP URL where the image is stored
+
+*Output data:*
+
+* `text`, the decoded barcode value
+* `barcode_type`, the type of the barcode  
 
 <div>
     <div class="leftcol">
@@ -59,7 +64,16 @@ Use this Action to create a new text index in HP Idol
 </div>
 
 ####Entity Extraction
-Use this Action to extract entities from text 
+Use this Action to extract entities (such as people, places, or companies) from a block of text. To finish configuration, select the type of entity you would like to extract from the drop-down list.
+
+*Input fields:*
+
+* `Text`, the text to extract entities from (optional)
+* `URL`, the URL of the text to extract entities from (optional)
+
+*Output data:*
+
+* `text`, 
 
 <div class="wrapper">
     <div class="leftcol">
@@ -71,7 +85,24 @@ Use this Action to extract entities from text
 </div>
 
 ####Find Similar
-Use this action to query HP Idol Databases for documents similar to your source document. 
+Use this Action to query HP Idol databases for documents similar to your source document. 
+
+*Input fields:*
+
+* `text`, the text of your source document (optional)
+* `URL`, the URL of your source document (optional)
+* `indexes`, the name of the IDOL public dataset or private index you would like to search for results (see shortcuts [here](http://www.idolondemand.com/developer/docs/PublicDatasets.html)). Defaults to Wikipedia (wiki_eng) if no value is entered
+
+*Output data:*
+
+* `reference`, the reference string ot the result document
+* `weight`, the percentage relevance that the result document has to the source document
+* `links`, the matching terms between the result document and the source document 
+* `index`, the text database the result returned from
+* `title`, the title of the result document
+* `summary`, the summary of the result document
+
+
 
 <div class="wrapper">
     <div class="leftcol">
@@ -82,6 +113,17 @@ Use this action to query HP Idol Databases for documents similar to your source 
 </div>
 
 ####Language Identification
+Use this Action to identify the language of some text.
+
+*Input fields:*
+
+* `text`, the text you want to analyze for language identification
+
+*Output data:*
+
+* `language`, the language of the text
+* `language_iso639_2b`, the ISO 639 code of the language
+
 <div class="wrapper">
     <div class="leftcol">
     </div>
@@ -91,6 +133,11 @@ Use this action to query HP Idol Databases for documents similar to your source 
 </div>
 
 ####Search Index
+Use this Action to serach a text index for documents containing a query term.
+
+<!--There is some weirdness here. It uses the Query Text Index API (http://www.idolondemand.com/developer/apis/querytextindex#request) but the inputs/outputs don't align with the expected request/response fields. Not really sure what this will do. -->
+
+
 <div class="wrapper">
     <div class="leftcol">
     </div>
@@ -100,6 +147,19 @@ Use this action to query HP Idol Databases for documents similar to your source 
 </div>
 
 ####Sentiment Analysis
+Use this Action to analyze a piece of text for sentiment.
+
+*Input fields:*
+
+* `text`, the text you want to analyze for sentiment (optional, if you enter a URL)
+* `URL`, the URL of the text you want to analyze for sentiment (optional, if you enter raw text)
+* `language`, the language of the text. Use the language codes provided [here](http://www.idolondemand.com/developer/apis/analyzesentiment#request). Default is English (eng)
+
+*Output data:*
+
+* `sentiment`, the aggregate sentiment of the text (positive, negative, or neutral)
+* `score`, confidence score of the sentiment analysis. Negative scores indicate negative sentiment.
+
 <div class="wrapper">
     <div class="leftcol">
     </div>
@@ -109,6 +169,10 @@ Use this action to query HP Idol Databases for documents similar to your source 
 </div>
 
 ####Text Tokenizer
+Use this action to return information about terms in a text. 
+
+<!--I have literally no idea what is happening here...-->
+
 <div class="wrapper">
     <div class="leftcol">
     </div>
