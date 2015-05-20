@@ -17,11 +17,11 @@ This action lets you post a new comment on an item in your feed. You can use thi
 *Input fields* :
 
 * text, the text of the comment you want to post   
-* feedItemId, the unique numeric ID of the feed Item you're responding to
+* feedItemId, the unique numeric ID of the feed item you're responding to
 
 *Output data* : 
 
-* id, the unique numeric id of the comment you are posting
+* id, the unique numeric ID of the comment
 * url, the url of the comment you are posting
 * type 
 
@@ -55,6 +55,6 @@ This action lets you automatically like a post on your chatter feed. Combine it 
 
 *Input fields*:
 
-* ID, the unique numberic id of the feed item you want to post.  
+* ID, the unique numeric id of the feed item you want to post.  
 
 

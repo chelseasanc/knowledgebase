@@ -43,6 +43,7 @@ Automatically post messages to your wall, letting your friends and followers kno
 
 * `wall ID`,
 * `message content`, the content of the message you would like to post
+
 <!---what is the wall ID and where do you find it? Can't find any reference to this term in the API--->
 
 *Output data*
